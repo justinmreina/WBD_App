@@ -1,3 +1,5 @@
+import java.io.File;
+
 /************************************************************************************************************************************/
 /** @file		WBDUpdate.java
  * 	@brief		WorkByDay check and update for directories
@@ -21,7 +23,11 @@
 public class WBDUpdate {
 
 	//Global Variables
-	public static String[] toppings = {"Cheese", "Pepperoni", "Black Olives"};
+	public static String[] directories = {
+										  "data\\TestA", 
+										  "data\\TestB", 
+										  "data\\TestC"};
+	
 	
 	/************************************************************************************************************************************/
 	/**	@fcn		public static void main(String[] args)
@@ -33,20 +39,48 @@ public class WBDUpdate {
 	/************************************************************************************************************************************/
 	public static void main(String[] args) {
 
-		//Init
-		toppings[0] = "Justin";
-		toppings[1] = "likes";
-		toppings[2] = "cheese";
+		for(int i=0; i<directories.length; i++) {
+			WBDUpdate.listDir(directories[i]);
+		}
 		
-		// Store the formatted string in 'result'
-		String message = String.format("%s %s %s.", toppings[0], toppings[1], toppings[2]);
-
-		// Write the result to standard output
-		System.out.println(message);
-		
-		System.out.println("WBDUpate complete.");
+		System.out.println("WBDUpate complete.");		
 		
 		return;
 	}
+	
+	
+	/************************************************************************************************************************************/
+	/**	@fcn		public static void main(String[] args)
+	 *  @brief		Application entry point
+	 *  @details	x
+	 *
+	 *  @param		[in] (String) path - 
+	 */
+	/************************************************************************************************************************************/
+	public static void listDir(String path) {
+
+		System.out.print("Dir Listing for - ");
+		System.out.print(path);
+		System.out.println(".");
+		
+		//Search dir
+		File dir = new File(path);
+		
+		File[] filesList = dir.listFiles();
+		
+		for (File file : filesList) {
+		    if (file.isFile()) {
+		    	System.out.print(" - ");
+		        System.out.println(file.getName());
+		    }
+		}
+		
+		System.out.println("Dir listing complete.");
+		
+		return;
+	}
+	
+	
+		
 
 }
