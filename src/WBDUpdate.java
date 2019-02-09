@@ -13,7 +13,7 @@ import java.io.File;
  * 	@notes		x
  *
  * 	@section	Opens
- * 			none current
+ * 			public vs. private variables?
  *
  * 	@section	Legal Disclaimer
  * 			© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
@@ -22,6 +22,8 @@ import java.io.File;
 /************************************************************************************************************************************/
 public class WBDUpdate {
 
+	public static String WBD_NAME = "WorkByDay";
+	
 	//Global Variables
 	public static String[] directories = {
 										  "data\\TestA", 
@@ -69,17 +71,22 @@ public class WBDUpdate {
 		File[] filesList = dir.listFiles();
 		
 		for (File file : filesList) {
-		    if (file.isFile()) {
-		    	System.out.print(" - ");
-		        System.out.println(file.getName());
-		    } else {
-		    	System.out.print("Here we will list the contents of ");
-		    	System.out.print(file.getName());
-		    	System.out.println(".");
+		    if (file.isDirectory()) {
+		    	
+		    	String name = file.getName();
+		    	
+		    	System.out.print("found: ");
+		    	System.out.println(name);
+		    	
+		    	Boolean matches = name.equals(WBD_NAME);
+		    	if(matches) {
+		    		System.out.println(">>>>WorkByDay was found.");	
+		    	} else {
+		    		System.out.println("WorkByDay was not found.");
+		    	}
+		    	
 		    	
 		    	WBDUpdate.listDir(file.getAbsolutePath());
-		    	
-		    	System.out.println("Subdir listing complete");
 		    }
 		}
 		
