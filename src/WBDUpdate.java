@@ -72,6 +72,14 @@ public class WBDUpdate {
 		    if (file.isFile()) {
 		    	System.out.print(" - ");
 		        System.out.println(file.getName());
+		    } else {
+		    	System.out.print("Here we will list the contents of ");
+		    	System.out.print(file.getName());
+		    	System.out.println(".");
+		    	
+		    	WBDUpdate.listDir(file.getAbsolutePath());
+		    	
+		    	System.out.println("Subdir listing complete");
 		    }
 		}
 		
