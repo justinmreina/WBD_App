@@ -9,7 +9,7 @@ import java.util.List;
  *
  * 	@author		Justin Reina, Firmware Engineer, Company Name
  * 	@created	2/8/19
- * 	@last rev	2/8/19
+ * 	@last rev	6/5/19
  *
  *
  * 	@notes		observed approximate 45 second search time
@@ -25,16 +25,12 @@ import java.util.List;
 /************************************************************************************************************************************/
 public class WBDUpdate {
 
-	public static String WBD_NAME = "WorkByDay";
-	
+	//Constants
+	public static final String WBD_NAME = "WorkByDay";						/* directory name										*/
+	public static final String testDir =  "data\\TestB"; 					/* test directory to search for WBD locations			*/
+
 	//Global Variables
-	public static String[] directories = {
-//										  "D:\\",
-										  "D:\\Documents\\Work\\Ergsense\\",			/* for faster search query					*/											
-										  "data\\TestB", 
-										  "data\\TestC"};
-	
-	public static List<File> wbd_directories;
+	public static List<File> wbd_directories;								/* dirs holding work-by-day content (e.g. '19_06_05/')	*/
 	
 	/********************************************************************************************************************************/
 	/**	@fcn		public static void main(String[] args)
@@ -46,24 +42,36 @@ public class WBDUpdate {
 	/********************************************************************************************************************************/
 	public static void main(String[] args) {
 
-		//Init
+		
+		//**************************************************************************************************************************//
+		//															INIT															//
+		//**************************************************************************************************************************//
 		wbd_directories = new ArrayList<>();
-		
+
 		System.out.println("Beginning search query for WorkByDay -");
+
 		
+		//**************************************************************************************************************************//
+		//													  FIND WBD LOCATIONS													//
+		//**************************************************************************************************************************//
 		//Find Wbd
-		for(int i=0; i<directories.length; i++) {
-			WBDUpdate.listDir(directories[i]);
-		}
+		WBDUpdate.listDir(testDir);
 		
 		System.out.println("Search query complete");
 		
 		//Print Results
 		printResults();
 
+		//**************************************************************************************************************************//
+		//												   CLEAN EMPTY DIRECTORIES													//
+		//**************************************************************************************************************************//
 		//Clean empty days
 		cleanEmptyDirs();
+
 		
+		//**************************************************************************************************************************//
+		//													  ADD TODAY DIRECTORY													//
+		//**************************************************************************************************************************//
 		//Check for Active Day, add if missing
 		updateActiveDir();
 		
@@ -72,21 +80,30 @@ public class WBDUpdate {
 		return;
 	}
 
-	
+	/********************************************************************************************************************************/
+	/**	@fcn		private static void updateActiveDir()
+	 *  @brief		x
+	 *  @details	x
+	 */
+	/********************************************************************************************************************************/
 	private static void updateActiveDir() {
-		// TODO Auto-generated method stub
-		
+		return;
 	}
 
-
+	
+	/********************************************************************************************************************************/
+	/**	@fcn		private static void cleanEmptyDirs()
+	 *  @brief		x
+	 *  @details	x
+	 */
+	/********************************************************************************************************************************/
 	private static void cleanEmptyDirs() {
-		// TODO Auto-generated method stub
-		
+		return;
 	}
 
 
 	/********************************************************************************************************************************/
-	/**	@fcn		public static void printResults(void)
+	/**	@fcn		public static void printResults()
 	 *  @brief		Print results found
 	 *  @details	x
 	 */
@@ -105,8 +122,8 @@ public class WBDUpdate {
 	
 	
 	/********************************************************************************************************************************/
-	/**	@fcn		public static void main(String[] args)
-	 *  @brief		Application entry point
+	/**	@fcn		public static void listDir(String path)
+	 *  @brief		x
 	 *  @details	x
 	 *
 	 *  @param		[in] (String) path - 
@@ -157,8 +174,5 @@ public class WBDUpdate {
 		
 		return;
 	}
-	
-	
-		
-
 }
+
