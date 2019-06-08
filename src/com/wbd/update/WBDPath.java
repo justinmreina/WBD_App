@@ -20,10 +20,13 @@
  */
 /************************************************************************************************************************************/
 package com.wbd.update;
-
 import java.io.File;
 
+
 public class WBDPath {
+
+	public static int count = 0;
+	public static int wbdcount = 0;
 
 	/********************************************************************************************************************************/
 	/**	@fcn		public void getAllDirs(String rootPath)
@@ -37,29 +40,58 @@ public class WBDPath {
 	 *  @assum 		rootPath is found
 	 */
 	/********************************************************************************************************************************/
-	public String[] getAllDirs(String rootPath) {
+	public static String[] getAllDirs(String rootPath) {
 		
 		//Locals
 		String[] vals = {"",""};
-		
+		File root;
 		
 		//Init
-		File root = new File(rootPath);
-		
-		
-		
-		
-		
-		
-		
-		//Post
-		System.out.println("A");
-		System.out.println(root.exists());
-			
-		vals[0] = "Hi";
-		vals[1] = "Bob";
+		root = new File(rootPath);
+
+		//Search
+		displayAll(root);
 		
 		return vals;
+	}
+	
+	
+	/********************************************************************************************************************************/
+	/**	@fcn		public void displayAll(File path)
+	 *  @brief		x
+	 *  @details	x
+	 *
+	 *  @param		[in] 
+	 */
+	/********************************************************************************************************************************/	
+	public static void displayAll(File path) {   
+		
+	    if(path.isDirectory()) {
+
+	    	//Get Directories
+	    	File files[] = path.listFiles();
+	        
+	        //Safety
+	        if(files == null) {
+	        	return;
+	        }
+	        
+	        //For each item
+	        for(File dirOrFile: files) {	        	
+	            displayAll(dirOrFile);
+	        }
+	        
+	    }
+	    
+	    WBDPath.count++;    
+	    String name = path.getName();
+	    
+	    if(name.equals("WorkByDay")) {
+	    	WBDPath.wbdcount++;
+	    }
+	    
+
+	    return;
 	}
 
 }
