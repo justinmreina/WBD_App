@@ -34,6 +34,7 @@ public class WBDUpdate {
 	//Global Variables
 	public static List<File> wbd_directories;								/* dirs holding work-by-day content (e.g. '19_06_05/')	*/
 	
+	
 	/********************************************************************************************************************************/
 	/**	@fcn		public static void main(String[] args)
 	 *  @brief		Application entry point
@@ -60,7 +61,7 @@ public class WBDUpdate {
 		WBDUpdate.listDir(testDir);
 		
 		System.out.println(">>Search query complete");
-		
+
 		//Print Results
 		printResults();
 
@@ -76,6 +77,16 @@ public class WBDUpdate {
 		//**************************************************************************************************************************//
 		//Check for Active Day, add if missing
 		updateActiveDir();
+		
+		//Test
+		WBDPath tester = new WBDPath();
+		
+		String[] resp = tester.getAllDirs("D:\\");
+		
+		for(int i=0; i< resp.length; i++) {
+			System.out.println("[" + i + "] " + resp[i] + ".");
+		}
+		
 		
 		System.out.println(">>WBDUpate complete.");		
 		
