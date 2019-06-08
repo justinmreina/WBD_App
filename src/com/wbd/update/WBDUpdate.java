@@ -21,6 +21,7 @@
 /************************************************************************************************************************************/
 package com.wbd.update;
 import java.io.File;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -48,21 +49,33 @@ public class WBDUpdate {
 	public static void main(String[] args) {
 
 		//Locals
-		Date date1, date2;
+		Date date1, date2;													/* dates found for time measurement						*/
+		String searchDirs[];												/* wbd dirs found										*/
+	
+		//Init
+		wbd_directories = new ArrayList<>();
 
-		
 		//Grab Start Time
 		date1 = new Date();
 				
 		//**************************************************************************************************************************//
-		//															INIT															//
-		//**************************************************************************************************************************//
-		wbd_directories = new ArrayList<>();
-
+		//															SEARCH															//
+		//**************************************************************************************************************************//	
 		System.out.println(">>Beginning search query for WorkByDay -");
 
-		WBDPath.getAllDirs("D:\\");		
+		//Find 
+		searchDirs = WBDPath.getAllDirs("D:\\");		
 		
+
+		//**************************************************************************************************************************//
+		//															CLEAN EMPTIES															//
+		//**************************************************************************************************************************//
+		
+		
+		
+		//**************************************************************************************************************************//
+		//															 END															//
+		//**************************************************************************************************************************//
 		System.out.println(">>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + ").");		
 
 		//Find elapsed time
@@ -75,5 +88,22 @@ public class WBDUpdate {
 		
 		return;
 	}
+
+
+	/********************************************************************************************************************************/
+	/**	@fcn		public static void processDir(Path wbd_path)
+	 *  @brief		x
+	 *  @details	x
+	 *
+	 *  @param		[in] (Path) wbd_dir - WorkByDay directory
+	 *  
+	 *  @assum		wbd_dir is valid WorkByDay directory
+	 */
+	/********************************************************************************************************************************/
+	public static void processDir(File wbd_dir) {
+		System.out.println("Processing: " + wbd_dir.getName());
+		return;
+	}
+	
 }
 

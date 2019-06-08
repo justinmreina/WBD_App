@@ -66,6 +66,7 @@ public class WBDPath {
 	/********************************************************************************************************************************/	
 	public static void displayAll(File path) {   
 		
+		//For each directory, recurse
 	    if(path.isDirectory()) {
 
 	    	//Get Directories
@@ -73,7 +74,7 @@ public class WBDPath {
 	        
 	        //Safety
 	        if(files == null) {
-	        	return;
+	        	return;														/* return on invalid content							*/
 	        }
 	        
 	        //For each item
@@ -83,14 +84,16 @@ public class WBDPath {
 	        
 	    }
 	    
+	    //Process Dir
 	    WBDPath.count++;    
 	    String name = path.getName();
 	    
-	    if(name.equals("WorkByDay")) {
-	    	WBDPath.wbdcount++;
+	    //Handle WBD directories
+	    if(name.equals("WorkByDay")) {	   
+	    	WBDPath.wbdcount++;												/* Update Count											*/
+	    	WBDUpdate.processDir(path);										/* Process the WorkByDay folder							*/
 	    }
 	    
-
 	    return;
 	}
 
