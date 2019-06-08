@@ -1,7 +1,3 @@
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
 /************************************************************************************************************************************/
 /** @file		WBDUpdate.java
  * 	@brief		WorkByDay check and update for directories
@@ -9,7 +5,7 @@ import java.util.List;
  *
  * 	@author		Justin Reina, Firmware Engineer, Company Name
  * 	@created	2/8/19
- * 	@last rev	6/5/19
+ * 	@last rev	6/7/19
  *
  *
  * 	@notes		observed approximate 45 second search time
@@ -23,6 +19,12 @@ import java.util.List;
  *			files are the explicit property of Company Name. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
+package com.wbd.update;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class WBDUpdate {
 
 	//Constants
@@ -48,7 +50,7 @@ public class WBDUpdate {
 		//**************************************************************************************************************************//
 		wbd_directories = new ArrayList<>();
 
-		System.out.println("Beginning search query for WorkByDay -");
+		System.out.println(">>Beginning search query for WorkByDay -");
 
 		
 		//**************************************************************************************************************************//
@@ -57,7 +59,7 @@ public class WBDUpdate {
 		//Find Wbd
 		WBDUpdate.listDir(testDir);
 		
-		System.out.println("Search query complete");
+		System.out.println(">>Search query complete");
 		
 		//Print Results
 		printResults();
@@ -75,7 +77,7 @@ public class WBDUpdate {
 		//Check for Active Day, add if missing
 		updateActiveDir();
 		
-		System.out.println("WBDUpate complete.");		
+		System.out.println(">>WBDUpate complete.");		
 		
 		return;
 	}
