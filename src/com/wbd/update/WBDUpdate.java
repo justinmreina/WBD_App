@@ -5,10 +5,13 @@
  *
  * 	@author		Justin Reina, Firmware Engineer
  * 	@created	2/8/19
- * 	@last rev	6/8/19
+ * 	@last rev	6/12/19
  *
  *
  * 	@notes		observed approximate 45 second search time
+ *
+ *	@section 	Next Steps
+ *		displayAll() stores all existing WBD and returns result
  *
  * 	@section	Opens
  * 		Check for empties & remove
@@ -21,7 +24,6 @@
 /************************************************************************************************************************************/
 package com.wbd.update;
 import java.io.File;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -29,10 +31,10 @@ import java.util.List;
 
 public class WBDUpdate {
 
-	//Constants
-	
-	public static final String WBD_NAME = "WorkByDay";						/* directory name										*/
-	public static final String testDir =  "data\\TestB"; 					/* test directory to search for WBD locations			*/
+	//Constants	
+	public static final String SEARCH_DIR = "D:\\";							/* search directory name								*/
+	public static final String WBD_NAME   = "WorkByDay";					/* directory name										*/
+	public static final String TEST_DIR   =  "data\\TestB"; 				/* test directory to search for WBD locations			*/
 
 	//Global Variables
 	public static List<File> wbd_directories;								/* dirs holding work-by-day content (e.g. '19_06_05/')	*/
@@ -64,13 +66,20 @@ public class WBDUpdate {
 		System.out.println(">>Beginning search query for WorkByDay -");
 
 		//Find 
-		searchDirs = WBDPath.getAllDirs("D:\\");		
+		searchDirs = WBDPath.getAllDirs(SEARCH_DIR);		
 		
 
 		//**************************************************************************************************************************//
 		//															CLEAN EMPTIES															//
 		//**************************************************************************************************************************//
 		
+		//For each WBD
+		for(String name : searchDirs) {
+			
+			File dir = new File(name);
+			
+			System.out.println(name + dir.exists());			
+		}
 		
 		
 		//**************************************************************************************************************************//
