@@ -34,7 +34,7 @@ public class WBDUpdate {
 	//Constants	
 	public static final String SEARCH_DIR = "D:\\";							/* search directory name								*/
 	public static final String WBD_NAME   = "WorkByDay";					/* directory name										*/
-	public static final String TEST_DIR   =  "data\\TestB"; 				/* test directory to search for WBD locations			*/
+	public static final String TEST_DIR   =  "data\\TestDirs"; 				/* test directory to search for WBD locations			*/
 
 	//Global Variables
 	public static List<File> wbd_directories;								/* dirs holding work-by-day content (e.g. '19_06_05/')	*/
@@ -66,7 +66,7 @@ public class WBDUpdate {
 		System.out.println(">>Beginning search query for WorkByDay -");
 
 		//Find 
-		searchDirs = WBDPath.getAllDirs(SEARCH_DIR);		
+		searchDirs = WBDPath.getAllDirs(TEST_DIR);		
 		
 
 		//**************************************************************************************************************************//
@@ -78,22 +78,22 @@ public class WBDUpdate {
 			
 			File dir = new File(name);
 			
-			System.out.println(name + dir.exists());			
+			System.out.println("Dir exists: " + dir.getName() + ": " + dir.exists() + ".");			
 		}
 		
 		
 		//**************************************************************************************************************************//
 		//															 END															//
 		//**************************************************************************************************************************//
-		System.out.println(">>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + ").");		
 
 		//Find elapsed time
 		date2 = new Date();
 		long delta_ms = date2.getTime() - date1.getTime();
 		
 		float time_s = (((float)delta_ms)/1000);
-		
-		System.out.println("Elapsed: " + time_s + "s");
+
+		//Exit Message
+		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
 		
 		return;
 	}

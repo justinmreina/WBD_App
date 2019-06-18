@@ -21,6 +21,7 @@
 /************************************************************************************************************************************/
 package com.wbd.update;
 import java.io.File;
+import java.util.LinkedList;
 
 
 public class WBDPath {
@@ -43,16 +44,83 @@ public class WBDPath {
 	public static String[] getAllDirs(String rootPath) {
 		
 		//Locals
-		String[] vals = {"",""};
+		LinkedList<String> vals;
 		File root;
 		
 		//Init
+		vals = new LinkedList<String>();
 		root = new File(rootPath);
-
-		//Search
-		displayAll(root);
+		System.out.println("Getting all dirs for " + rootPath + ".");
 		
-		return vals;
+		//Search
+		vals = getSubDirs(root);
+
+		//Convert to result
+		String[] arr = new String[vals.size()];
+		arr =  vals.toArray(arr);
+		
+		
+		return arr;
+	}
+
+	
+	/********************************************************************************************************************************/
+	/**	@fcn		public void getSubDirs(File path)
+	 *  @brief		list all sub-directories under a specified path
+	 *  @details	x
+	 *
+	 *  @param		[in] (File) path - root directory to search for subdirs
+	 *  @return 	(LinkedList<String>) subdir listing
+	 */
+	/********************************************************************************************************************************/	
+	public static LinkedList<String> getSubDirs(File path) {
+
+		//Locals
+		LinkedList<String> subdirs;											/* subdirectory listing for path						*/
+		LinkedList<String> allSubDirs;										/* response value										*/
+		
+		
+		//Init
+		subdirs = new LinkedList<>();
+		allSubDirs = new LinkedList<>();
+
+		System.out.println("Getting all subdirs for " + path.getName() + ".");
+
+		//**************************************************************************************************************************//
+		//												 IMMEDIATE SUB DIR LISTING												    //
+		//**************************************************************************************************************************//
+		//Get immediate sub-directories
+    	File files[] = path.listFiles();
+        
+        //Safety
+        if(files == null) {
+        	return subdirs;												/* return on invalid content							*/
+        }		
+
+        //Extract directories
+        for(File file : files) {
+        	if(file.isDirectory()) {
+        		subdirs.add(file.getAbsolutePath());
+        	}
+        }
+        
+        //Append to result
+        allSubDirs.addAll(subdirs);
+        
+        
+		//**************************************************************************************************************************//
+		//												 RECURSE SUB DIR LISTING												    //
+		//**************************************************************************************************************************//
+        for(String subdir : subdirs) {
+        	
+        	//Get this directories
+        	LinkedList<String> newSubDirs = getSubDirs(new File(subdir));
+        	
+        	//Append
+        	allSubDirs.addAll(newSubDirs);        	
+        }
+		
+		return allSubDirs; 													/* all sub dirs 											*/
 	}
 	
 	
