@@ -26,6 +26,7 @@ package com.wbd.update;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -66,8 +67,8 @@ public class WBDUpdate {
 		System.out.println(">>Beginning search query for WorkByDay -");
 
 		//Find 
-		searchDirs = WBDPath.getAllDirs(TEST_DIR);		
-		
+		searchDirs = WBDPath.getAllWbdDirs(TEST_DIR);		
+				
 
 		//**************************************************************************************************************************//
 		//															CLEAN EMPTIES															//
@@ -80,7 +81,6 @@ public class WBDUpdate {
 			
 			System.out.println("Dir exists: " + dir.getName() + ": " + dir.exists() + ".");			
 		}
-		
 		
 		//**************************************************************************************************************************//
 		//															 END															//

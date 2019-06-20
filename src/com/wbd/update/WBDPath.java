@@ -30,6 +30,45 @@ public class WBDPath {
 	public static int wbdcount = 0;
 
 	/********************************************************************************************************************************/
+	/**	@fcn		public void getAllWbdDirs(String rootPath)
+	 *  @brief		Get 'WorkByDay' Directories under rootPath
+	 *  @details	x
+	 *
+	 *  @param		[in] (String) root - root directory
+	 *  
+	 *  @open		File input?
+	 *  
+	 *  @assum 		rootPath is found
+	 */
+	/********************************************************************************************************************************/
+	public static String[] getAllWbdDirs(String rootPath) {
+		
+		//Locals
+		String[] allDirs;
+		LinkedList<String> wbdDirs;
+		
+		//Init
+		wbdDirs = new LinkedList<String>();
+		
+		//Retrieve all directories
+		allDirs = WBDPath.getAllDirs(rootPath);
+		
+		//Parse wbd
+		for(String dir : allDirs) {
+
+			String[] array = dir.split("[\\\\/]",-1) ;
+			String dirName = array[array.length-1];
+
+			if(dirName.equals("WorkByDay")) {
+				wbdDirs.add(dir);
+			}			
+		}
+		
+		
+		return wbdDirs.toArray(new String[wbdDirs.size()]);
+	}
+	
+	/********************************************************************************************************************************/
 	/**	@fcn		public void getAllDirs(String rootPath)
 	 *  @brief		Get Directory Listing under rootPath
 	 *  @details	x
