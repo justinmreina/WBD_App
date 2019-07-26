@@ -14,9 +14,9 @@
  *		displayAll() stores all existing WBD and returns result
  *
  * 	@section	Opens
- * 		Check for empties & remove
- * 		Check for today's dir and insert if not found
- *
+ * 		addToday() - Check for today's dir and insert if not found
+ * 		cleanEmpties() - Check for empties & remove
+ * 		
  * 	@section	Legal Disclaimer
  * 			2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
  *			files are the explicit property of Company Name. Do not distribute. Do not copy.
@@ -80,9 +80,16 @@ public class WBDUpdate {
 		//For each WBD
 		for(String name : searchDirs) {
 			
+			//Grab the WBD Dir
 			File dir = new File(name);
 			
-//			System.out.println("Dir exists: " + dir.getName() + ": " + dir.exists() + ".");			
+			//Remove empty dirs at root
+			WBDPath.cleanEmpties(dir);
+			
+			//Add today's dir
+			WBDPath.addToday(dir);
+			
+			System.out.println("Updated  " + dir.getPath());
 		}
 		
 		//**************************************************************************************************************************//
