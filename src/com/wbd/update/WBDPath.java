@@ -64,7 +64,6 @@ public class WBDPath {
 			}			
 		}
 		
-		
 		return wbdDirs.toArray(new String[wbdDirs.size()]);
 	}
 	
@@ -89,7 +88,7 @@ public class WBDPath {
 		//Init
 		vals = new LinkedList<String>();
 		root = new File(rootPath);
-		System.out.println("Getting all dirs for " + rootPath + ".");
+//		System.out.println("Getting all dirs for " + rootPath + ".");
 		
 		//Search
 		vals = getSubDirs(root);
@@ -123,7 +122,7 @@ public class WBDPath {
 		subdirs = new LinkedList<>();
 		allSubDirs = new LinkedList<>();
 
-		System.out.println("Getting all subdirs for " + path.getName() + ".");
+//		System.out.println("Getting all subdirs for " + path.getName() + ".");
 
 		//**************************************************************************************************************************//
 		//												 IMMEDIATE SUB DIR LISTING												    //

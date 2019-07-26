@@ -66,10 +66,13 @@ public class WBDUpdate {
 		//**************************************************************************************************************************//	
 		System.out.println(">>Beginning search query for WorkByDay -");
 
-		//Find 
+		//Find all WBD in target
 		searchDirs = WBDPath.getAllWbdDirs(TEST_DIR);		
 				
-
+		//Update Dir Counts
+		WBDPath.wbdcount = searchDirs.length;
+		WBDPath.count = WBDPath.getAllDirs(TEST_DIR).length;
+		
 		//**************************************************************************************************************************//
 		//															CLEAN EMPTIES															//
 		//**************************************************************************************************************************//
@@ -79,7 +82,7 @@ public class WBDUpdate {
 			
 			File dir = new File(name);
 			
-			System.out.println("Dir exists: " + dir.getName() + ": " + dir.exists() + ".");			
+//			System.out.println("Dir exists: " + dir.getName() + ": " + dir.exists() + ".");			
 		}
 		
 		//**************************************************************************************************************************//
