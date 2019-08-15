@@ -26,7 +26,6 @@ package com.wbd.update;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 
 
@@ -34,11 +33,12 @@ public class WBDUpdate {
 
 	//Constants	
 	public static final String SEARCH_DIR = "D:\\";							/* search directory name								*/
-	public static final String WBD_NAME   = "WorkByDay";					/* directory name										*/
 	public static final String TEST_DIR   =  "data\\TestDirs"; 				/* test directory to search for WBD locations			*/
+	public static final String WBD_NAME   = "WorkByDay";					/* directory name										*/
 
 	//Global Variables
 	public static List<File> wbd_directories;								/* dirs holding work-by-day content (e.g. '19_06_05/')	*/
+	public static String searchDir;											/* search directory for application						*/
 	
 	
 	/********************************************************************************************************************************/
@@ -57,7 +57,8 @@ public class WBDUpdate {
 	
 		//Init
 		wbd_directories = new ArrayList<>();
-
+		searchDir = TEST_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
+		
 		//Grab Start Time
 		date1 = new Date();
 				
@@ -67,11 +68,11 @@ public class WBDUpdate {
 		System.out.println(">>Beginning search query for WorkByDay -");
 
 		//Find all WBD in target
-		searchDirs = WBDPath.getAllWbdDirs(TEST_DIR);		
+		searchDirs = WBDPath.getAllWbdDirs(searchDir);		
 				
 		//Update Dir Counts
 		WBDPath.wbdcount = searchDirs.length;
-		WBDPath.count = WBDPath.getAllDirs(TEST_DIR).length;
+		WBDPath.count = WBDPath.getAllDirs(searchDir).length;
 		
 		//**************************************************************************************************************************//
 		//															CLEAN EMPTIES															//
@@ -89,7 +90,7 @@ public class WBDUpdate {
 			//Add today's dir
 			WBDPath.addToday(dir);
 			
-			System.out.println("Updated  " + dir.getPath());
+			System.out.println("  Updated  " + dir.getPath());
 		}
 		
 		//**************************************************************************************************************************//
