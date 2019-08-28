@@ -5,7 +5,7 @@
  *
  * 	@author		Justin Reina, Firmware Engineer, Company Name
  * 	@created	2/8/19
- * 	@last rev	6/7/19
+ * 	@last rev	8/28/19
  *
  *
  * 	@notes		observed approximate 45 second search time
@@ -85,18 +85,17 @@ public class WBDPath {
 		LinkedList<String> vals;
 		File root;
 		
+		
 		//Init
 		vals = new LinkedList<String>();
 		root = new File(rootPath);
-//		System.out.println("Getting all dirs for " + rootPath + ".");
 		
 		//Search
-		vals = getSubDirs(root);
+		vals = getSubDirs(root, true);
 
 		//Convert to result
 		String[] arr = new String[vals.size()];
 		arr =  vals.toArray(arr);
-		
 		
 		return arr;
 	}
@@ -108,10 +107,12 @@ public class WBDPath {
 	 *  @details	x
 	 *
 	 *  @param		[in] (File) path - root directory to search for subdirs
+	 *  @param		[in] (boolean) recurse - look at subdirs within subdirs
+	 *  
 	 *  @return 	(LinkedList<String>) subdir listing
 	 */
 	/********************************************************************************************************************************/	
-	public static LinkedList<String> getSubDirs(File path) {
+	public static LinkedList<String> getSubDirs(File path, boolean recurse) {
 
 		//Locals
 		LinkedList<String> subdirs;											/* subdirectory listing for path						*/
@@ -122,7 +123,6 @@ public class WBDPath {
 		subdirs = new LinkedList<>();
 		allSubDirs = new LinkedList<>();
 
-//		System.out.println("Getting all subdirs for " + path.getName() + ".");
 
 		//**************************************************************************************************************************//
 		//												 IMMEDIATE SUB DIR LISTING												    //
@@ -149,16 +149,18 @@ public class WBDPath {
 		//**************************************************************************************************************************//
 		//												 RECURSE SUB DIR LISTING												    //
 		//**************************************************************************************************************************//
-        for(String subdir : subdirs) {
-        	
-        	//Get this directories
-        	LinkedList<String> newSubDirs = getSubDirs(new File(subdir));
-        	
-        	//Append
-        	allSubDirs.addAll(newSubDirs);        	
+        if(recurse) {
+	        for(String subdir : subdirs) {
+	        	
+	        	//Get this directories
+	        	LinkedList<String> newSubDirs = getSubDirs(new File(subdir), true);
+	        	
+	        	//Append
+	        	allSubDirs.addAll(newSubDirs);        	
+	        }
         }
 		
-		return allSubDirs; 													/* all sub dirs 											*/
+		return allSubDirs; 													/* all sub dirs 										*/
 	}
 	
 	
