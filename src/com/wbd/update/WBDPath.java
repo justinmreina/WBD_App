@@ -213,6 +213,20 @@ public class WBDPath {
 	/********************************************************************************************************************************/	
 	public static void cleanEmpties(File path) {
 		
+		//Get subdirs
+		LinkedList<String> dirs = getSubDirs(path, false);
+		
+		for(String dir : dirs) {
+			
+			File dirPath = new File(dir);
+			
+			//If empty, toss
+			if(isDirEmpty(dirPath)) {
+				System.out.println(" " + dirPath.getName() + " was deleted.");
+				dirPath.delete();
+			}
+		}
+		
 		return;
 	}
 
@@ -266,5 +280,32 @@ public class WBDPath {
 		
 		return days;
 	}
+	
+	
+	/********************************************************************************************************************************/
+	/**	@fcn		public static boolean isDirEmpty(File dir)
+	 *  @brief		check if directory is empty
+	 *  @details	x
+	 *
+	 *  @param		[in] (File) dir - x
+	 *  
+	 *  @return 	(boolean) is empty?
+	 */
+	/********************************************************************************************************************************/	
+	public static boolean isDirEmpty(File dir) { 
+		
+		//Locals
+		boolean isDir;
+		boolean hasContents;
+		boolean isEmpty;
+		
+		isDir = dir.isDirectory();
+		hasContents = dir.list().length != 0;
+		
+		isEmpty = !(isDir&&hasContents);
+				
+		return isEmpty;
+	}
+	
 }
 

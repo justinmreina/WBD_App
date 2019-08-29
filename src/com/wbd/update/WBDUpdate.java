@@ -14,12 +14,15 @@
  *		displayAll() stores all existing WBD and returns result
  *
  * 	@section	Opens
+ * 		inject empty dirs on test boot
  * 		addToday() - Check for today's dir and insert if not found
  * 		cleanEmpties() - Check for empties & remove
+ * 		clean File/String mashup for use
+ * 		only deletes dirs if valid folder name (wbd path)
  * 		
  * 	@section	Legal Disclaimer
  * 			2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
- *			files are the explicit property of Company Name. Do not distribute. Do not copy.
+ *			files are the explicit property of Justin Reina. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
 package com.wbd.update;
@@ -61,12 +64,12 @@ public class WBDUpdate {
 		
 		//Grab Start Time
 		date1 = new Date();
-			
-		searchDirs = WBDPath.daysofYear(2019);
-		
-		for(String s : searchDirs) {
-			System.out.println(s);
-		}
+
+//		searchDirs = WBDPath.daysofYear(2019);
+//		
+//		for(String s : searchDirs) {
+//			System.out.println(s);
+//		}
 		
 		//**************************************************************************************************************************//
 		//															SEARCH															//
@@ -75,17 +78,23 @@ public class WBDUpdate {
 
 		//Find all WBD in target
 		searchDirs = WBDPath.getAllWbdDirs(searchDir);		
-				
+
 		//Update Dir Counts
 		WBDPath.wbdcount = searchDirs.length;
 		WBDPath.count = WBDPath.getAllDirs(searchDir).length;
-		
+
+
 		//**************************************************************************************************************************//
 		//															CLEAN EMPTIES															//
 		//**************************************************************************************************************************//
 
+		//Clean
+		for(String dir : searchDirs) {
+			WBDPath.cleanEmpties(new File(dir));							/* For each WBD, check for empties at root				*/
+		}
+//...		
 		
-//		//Grab Start Time
+		//		//Grab Start Time
 //		date1 = new Date();
 //				
 //		//**************************************************************************************************************************//
@@ -126,12 +135,12 @@ public class WBDUpdate {
 //		//Find elapsed time
 //		date2 = new Date();
 //		long delta_ms = date2.getTime() - date1.getTime();
-//		
-//		float time_s = (((float)delta_ms)/1000);
-//
-//		//Exit Message
-//		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
-//		
+		float delta_ms = 1234;
+		float time_s = (((float)delta_ms )/1000);
+
+		//Exit Message
+		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
+		
 		return;
 	}
 
