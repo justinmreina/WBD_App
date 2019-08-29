@@ -61,7 +61,13 @@ public class WBDUpdate {
 		
 		//Grab Start Time
 		date1 = new Date();
-				
+			
+		searchDirs = WBDPath.daysofYear(2019);
+		
+		for(String s : searchDirs) {
+			System.out.println(s);
+		}
+		
 		//**************************************************************************************************************************//
 		//															SEARCH															//
 		//**************************************************************************************************************************//	
@@ -77,35 +83,55 @@ public class WBDUpdate {
 		//**************************************************************************************************************************//
 		//															CLEAN EMPTIES															//
 		//**************************************************************************************************************************//
-		
-		//For each WBD
-		for(String name : searchDirs) {
-			
-			//Grab the WBD Dir
-			File dir = new File(name);
-			
-			//Remove empty dirs at root
-			WBDPath.cleanEmpties(dir);
-			
-			//Add today's dir
-			WBDPath.addToday(dir);
-			
-			System.out.println("  Updated  " + dir.getPath());
-		}
-		
-		//**************************************************************************************************************************//
-		//															 END															//
-		//**************************************************************************************************************************//
 
-		//Find elapsed time
-		date2 = new Date();
-		long delta_ms = date2.getTime() - date1.getTime();
 		
-		float time_s = (((float)delta_ms)/1000);
-
-		//Exit Message
-		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
-		
+//		//Grab Start Time
+//		date1 = new Date();
+//				
+//		//**************************************************************************************************************************//
+//		//															SEARCH															//
+//		//**************************************************************************************************************************//	
+//		System.out.println(">>Beginning search query for WorkByDay -");
+//
+//		//Find all WBD in target
+//		searchDirs = WBDPath.getAllWbdDirs(searchDir);		
+//				
+//		//Update Dir Counts
+//		WBDPath.wbdcount = searchDirs.length;
+//		WBDPath.count = WBDPath.getAllDirs(searchDir).length;
+//		
+//		//**************************************************************************************************************************//
+//		//															CLEAN EMPTIES															//
+//		//**************************************************************************************************************************//
+//		
+//		//For each WBD
+//		for(String name : searchDirs) {
+//			
+//			//Grab the WBD Dir
+//			File dir = new File(name);
+//			
+//			//Remove empty dirs at root
+//			WBDPath.cleanEmpties(dir);
+//			
+//			//Add today's dir
+//			WBDPath.addToday(dir);
+//			
+//			System.out.println("  Updated  " + dir.getPath());
+//		}
+//		
+//		//**************************************************************************************************************************//
+//		//															 END															//
+//		//**************************************************************************************************************************//
+//
+//		//Find elapsed time
+//		date2 = new Date();
+//		long delta_ms = date2.getTime() - date1.getTime();
+//		
+//		float time_s = (((float)delta_ms)/1000);
+//
+//		//Exit Message
+//		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
+//		
 		return;
 	}
 

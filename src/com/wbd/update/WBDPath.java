@@ -1,22 +1,14 @@
 /************************************************************************************************************************************/
-/** @file		WBDUpdate.java
- * 	@brief		WorkByDay check and update for directories
- * 	@details	x
- *
- * 	@author		Justin Reina, Firmware Engineer, Company Name
- * 	@created	2/8/19
- * 	@last rev	8/28/19
- *
- *
- * 	@notes		observed approximate 45 second search time
+/** @file		WBDPath.java
+ * 	@brief		WorkByDay Path content
+ * 	@details	Description, use and management
  *
  * 	@section	Opens
- * 			public vs. private variables?
- * 			sprintf...
+ * 			none listed
  *
  * 	@section	Legal Disclaimer
- * 			Â© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
- *			files are the explicit property of Company Name. Do not distribute. Do not copy.
+ * 			2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
+ *			files are the explicit property of Justin Reina. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
 package com.wbd.update;
@@ -26,6 +18,11 @@ import java.util.LinkedList;
 
 public class WBDPath {
 
+	//Constants	
+	public static final int MONTHS_IN_YEAR = 12;
+	public static final int DAYS_IN_MONTH  = 31;
+
+	//Global Variables
 	public static int count = 0;
 	public static int wbdcount = 0;
 
@@ -231,6 +228,43 @@ public class WBDPath {
 	public static void addToday(File path) { 
 		
 		return;
+	}
+	
+	
+	/********************************************************************************************************************************/
+	/**	@fcn		public static String[] daysofYear(int year)
+	 *  @brief		Get listing of all possible days for the year
+	 *  @details	x
+	 *
+	 *	@param 		[in] (int) year - year for name specification
+	 *
+	 *  @return 	(String[]) days of the year describing folder names
+	 *  
+	 *  @note 		naming not exact, days not exact but provide full coverage
+	 */
+	/********************************************************************************************************************************/	
+	public static String[] daysofYear(int year) { 
+		
+		//Locals
+		String[] days;
+		
+		//Init
+		days = new String[(MONTHS_IN_YEAR*DAYS_IN_MONTH)];					/* get listing for all possible month & day values		*/
+
+		//Trim year to last two digits
+		year %= 100;
+		
+		//For each day
+		for(int i=0; i<(MONTHS_IN_YEAR*DAYS_IN_MONTH); i++) {
+			
+			//Calc
+			int month = (i/DAYS_IN_MONTH)+1;
+			int day = i-((month-1)*DAYS_IN_MONTH)+1;
+			
+			days[i] = String.format("%02d_%02d_%02d", year, month, day);
+		}
+		
+		return days;
 	}
 }
 
