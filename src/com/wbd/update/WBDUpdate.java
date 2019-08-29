@@ -33,10 +33,8 @@ import java.util.List;
 public class WBDUpdate {
 
 	//Constants	
-	public static final String SEARCH_DIR = "C:\\Users\\Esther\\Documents";	/* search directory name								*/
-//	public static final String TEST_DIR   =  "data\\TestDirs"; 				/* test directory to search for WBD locations			*/
-	public static final String TEST_DIR   =  "C:\\Users\\Esther\\Documents\\Work\\MyWorkspaces\\Java\\WBD_App\\data\\TestDirs"; 
-																			/* Windows command line syntax							*/
+	public static final String SEARCH_DIR = "D:\\";							/* search directory name								*/
+	public static final String TEST_DIR   = "data\\TestDirs"; 				/* test directory to search for WBD locations			*/
 	
 	public static final String WBD_NAME   = "WorkByDay";					/* directory name										*/
 
