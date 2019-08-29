@@ -58,7 +58,7 @@ public class WBDUpdate {
 	
 		//Init
 		wbd_directories = new ArrayList<>();
-		searchDir = TEST_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
+		searchDir = SEARCH_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
 		
 		//Grab Start Time
 		date1 = new Date();
