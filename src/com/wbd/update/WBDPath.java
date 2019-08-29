@@ -171,15 +171,15 @@ public class WBDPath {
 	/********************************************************************************************************************************/
 	/**	@fcn		public static void cleanEmpties(File path)
 	 *  @brief		Remove empty dirs at root
-	 *  @details	x
+	 *  @details	No recursion
 	 *
-	 *  @param		[in] 
+	 *  @param		[in] (File) root - path to search under
 	 */
 	/********************************************************************************************************************************/	
-	public static void cleanEmpties(File path) {
+	public static void cleanEmpties(File root) {
 		
 		//Get subdirs
-		LinkedList<String> dirs = getSubDirs(path, false);
+		LinkedList<String> dirs = getSubDirs(root, false);
 		
 		for(String dir : dirs) {
 			
@@ -202,7 +202,6 @@ public class WBDPath {
 	 *  @details	x
 	 *
 	 *  @param		[in] (File) root - directory to add today
-	 *  
 	 *  
 	 *  @pre 	skip if today is present
 	 */
@@ -273,7 +272,7 @@ public class WBDPath {
 	 *  @brief		check if directory is empty
 	 *  @details	x
 	 *
-	 *  @param		[in] (File) dir - x
+	 *  @param		[in] (File) dir - directory to search for contents
 	 *  
 	 *  @return 	(boolean) is empty?
 	 */
@@ -295,11 +294,11 @@ public class WBDPath {
 
 
 	/********************************************************************************************************************************/
-	/**	@fcn		public static boolean isDirEmpty(File dir)
-	 *  @brief		check if directory is empty
+	/**	@fcn		public static void setupTest(String dir) 
+	 *  @brief		setup directories for test operation
 	 *  @details	x
 	 *
-	 *  @param		[in] (File) dir - x
+	 *  @param		[in] (File) dir - directory to setup
 	 *  
 	 *  @section 	Opens
 	 *  	complete routine
@@ -324,9 +323,6 @@ public class WBDPath {
 	 *  @details	x
 	 *
 	 *  @return 	(String) today's path (e.g. "19_08_28" for 8/28/19)
-	 *  
-	 *  @section 	Opens
-	 *  	complete routine
 	 *  
 	 *  @assum		US-Pacific location
 	 */

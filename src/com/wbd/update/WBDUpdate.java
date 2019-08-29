@@ -15,7 +15,6 @@
  * 		run from scheduled windows task
  * 
  *  @section 	Deferred Opens
- *  	clean all function headers
  * 		inject empty dirs on test boot
  * 		clean File/String mashup for use
  * 		only deletes dirs if valid folder name (wbd path)
@@ -49,7 +48,7 @@ public class WBDUpdate {
 	 *  @brief		Application entry point
 	 *  @details	x
 	 *
-	 *  @param		[in] (String[]) args - 
+	 *  @param		[in] (String[]) args - executable arguments from command line
 	 */
 	/********************************************************************************************************************************/
 	public static void main(String[] args) {
@@ -121,22 +120,5 @@ public class WBDUpdate {
 		
 		return;
 	}
-
-
-	/********************************************************************************************************************************/
-	/**	@fcn		public static void processDir(Path wbd_path)
-	 *  @brief		x
-	 *  @details	x
-	 *
-	 *  @param		[in] (Path) wbd_dir - WorkByDay directory
-	 *  
-	 *  @assum		wbd_dir is valid WorkByDay directory
-	 */
-	/********************************************************************************************************************************/
-	public static void processDir(File wbd_dir) {
-		System.out.println("Processing: " + wbd_dir.getName());
-		return;
-	}
-	
 }
 
