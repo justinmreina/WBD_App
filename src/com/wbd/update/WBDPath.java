@@ -225,7 +225,7 @@ public class WBDPath {
 			
 			//If empty, toss
 			if(isDirEmpty(dirPath)) {
-				System.out.println(" " + dirPath.getName() + " was deleted.");
+				System.out.println(" " + dir + "\\" + dirPath.getName() + " was deleted.");
 				dirPath.delete();
 			}
 		}
@@ -239,15 +239,36 @@ public class WBDPath {
 	 *  @brief		Add today's dir
 	 *  @details	x
 	 *
-	 *  @param		[in] 
+	 *  @param		[in] (File) root - directory to add today
+	 *  
+	 *  
+	 *  @pre 	skip if today is present
 	 */
 	/********************************************************************************************************************************/	
-	public static void addToday(File path) { 
+	public static void addToday(File root) { 
+		
+		//Locals
+		String 	name;
+		File dir;
+		
+		//Init
+		name = getToday();
+		
+		//Already Present?
+		String today = (root.getAbsolutePath() + "\\" + name);
+		dir = new File(today);
+		
+		//Populate
+		if(!dir.exists()) {
+			dir.mkdirs();													/* create if not found									*/
+		} else {
+			System.out.println(dir.getAbsolutePath() + "\\" + name + "\\ was already present, skipping");
+		}
 		
 		return;
 	}
-	
-	
+
+
 	/********************************************************************************************************************************/
 	/**	@fcn		public static String[] daysofYear(int year)
 	 *  @brief		Get listing of all possible days for the year

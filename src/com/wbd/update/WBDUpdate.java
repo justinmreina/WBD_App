@@ -5,20 +5,17 @@
  *
  * 	@author		Justin Reina, Firmware Engineer
  * 	@created	2/8/19
- * 	@last rev	6/12/19
+ * 	@last rev	8/28/19
  *
  *
  * 	@notes		observed approximate 45 second search time
  *
- *	@section 	Next Steps
- *		displayAll() stores all existing WBD and returns result
- *
  * 	@section	Opens
- * 		addToday() - Check for today's dir and insert if not found
  * 		run from batch file
  * 		run from scheduled windows task
  * 
  *  @section 	Deferred Opens
+ *  	clean all function headers
  * 		inject empty dirs on test boot
  * 		clean File/String mashup for use
  * 		only deletes dirs if valid folder name (wbd path)
@@ -86,57 +83,37 @@ public class WBDUpdate {
 
 
 		//**************************************************************************************************************************//
-		//															CLEAN EMPTIES															//
+		//														 CLEAN EMPTIES														//
 		//**************************************************************************************************************************//
+
+		//Grab Start Time
+		date1 = new Date();
 
 		//Clean
 		for(String dir : searchDirs) {
 			WBDPath.cleanEmpties(new File(dir));							/* For each WBD, check for empties at root				*/
 		}
-//...		
 		
-		//		//Grab Start Time
-//		date1 = new Date();
-//				
-//		//**************************************************************************************************************************//
-//		//															SEARCH															//
-//		//**************************************************************************************************************************//	
-//		System.out.println(">>Beginning search query for WorkByDay -");
-//
-//		//Find all WBD in target
-//		searchDirs = WBDPath.getAllWbdDirs(searchDir);		
-//				
-//		//Update Dir Counts
-//		WBDPath.wbdcount = searchDirs.length;
-//		WBDPath.count = WBDPath.getAllDirs(searchDir).length;
-//		
-//		//**************************************************************************************************************************//
-//		//															CLEAN EMPTIES															//
-//		//**************************************************************************************************************************//
-//		
-//		//For each WBD
-//		for(String name : searchDirs) {
-//			
-//			//Grab the WBD Dir
-//			File dir = new File(name);
-//			
-//			//Remove empty dirs at root
-//			WBDPath.cleanEmpties(dir);
-//			
-//			//Add today's dir
-//			WBDPath.addToday(dir);
-//			
-//			System.out.println("  Updated  " + dir.getPath());
-//		}
-//		
-//		//**************************************************************************************************************************//
-//		//															 END															//
-//		//**************************************************************************************************************************//
-//
-//		//Find elapsed time
-//		date2 = new Date();
-//		long delta_ms = date2.getTime() - date1.getTime();
-		float delta_ms = 1234;
+		
+		//**************************************************************************************************************************//
+		//															ADD TODAY														//
+		//**************************************************************************************************************************//
+		
+		//Add today
+		for(String dir : searchDirs) {
+			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
+		}
+		
+		
+		//**************************************************************************************************************************//
+		//															 END															//
+		//**************************************************************************************************************************//
+
+		//Find elapsed time
+		date2 = new Date();
+		
+		//Calc
+		long delta_ms = date2.getTime() - date1.getTime();
 		float time_s = (((float)delta_ms )/1000);
 
 		//Exit Message
