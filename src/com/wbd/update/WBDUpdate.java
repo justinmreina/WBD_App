@@ -14,9 +14,12 @@
  *		displayAll() stores all existing WBD and returns result
  *
  * 	@section	Opens
- * 		inject empty dirs on test boot
  * 		addToday() - Check for today's dir and insert if not found
- * 		cleanEmpties() - Check for empties & remove
+ * 		run from batch file
+ * 		run from scheduled windows task
+ * 
+ *  @section 	Deferred Opens
+ * 		inject empty dirs on test boot
  * 		clean File/String mashup for use
  * 		only deletes dirs if valid folder name (wbd path)
  * 		
@@ -65,11 +68,9 @@ public class WBDUpdate {
 		//Grab Start Time
 		date1 = new Date();
 
-//		searchDirs = WBDPath.daysofYear(2019);
-//		
-//		for(String s : searchDirs) {
-//			System.out.println(s);
-//		}
+		//Setup
+		WBDPath.setupTest(searchDir);
+
 		
 		//**************************************************************************************************************************//
 		//															SEARCH															//

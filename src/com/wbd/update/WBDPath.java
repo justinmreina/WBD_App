@@ -306,6 +306,29 @@ public class WBDPath {
 				
 		return isEmpty;
 	}
-	
+
+
+	/********************************************************************************************************************************/
+	/**	@fcn		public static boolean isDirEmpty(File dir)
+	 *  @brief		check if directory is empty
+	 *  @details	x
+	 *
+	 *  @param		[in] (File) dir - x
+	 *  
+	 *  @section 	Opens
+	 *  	complete routine
+	 */
+	/********************************************************************************************************************************/	
+	public static void setupTest(String dir) { 
+		
+		//Test Check
+		if(dir != WBDUpdate.TEST_DIR) {
+			return;															/* only setup for test on TEST_DIR case					*/
+		}
+
+		//Inject a handful of empty directories with valid syntax
+				
+		return;
+	}
 }
 
