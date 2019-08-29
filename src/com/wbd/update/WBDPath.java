@@ -186,13 +186,53 @@ public class WBDPath {
 			File dirPath = new File(dir);
 			
 			//If empty, toss
-			if(isDirEmpty(dirPath)) {
+			if(isDirEmpty(dirPath)&&isDirPath(dirPath)) {
 				System.out.println(" " + dir + "\\" + dirPath.getName() + " was deleted.");
 				dirPath.delete();
 			}
 		}
 		
 		return;
+	}
+
+	
+	/********************************************************************************************************************************/
+	/**	@fcn		private static boolean isDirPath(File dirPath) 
+	 *  @brief		check syntax (e.g. "19_08_01" for Aug 1, 2019)
+	 *  @details	x
+	 *
+	 *  @param		[in] (File) dirPath - directory to search
+	 *  
+	 *  @return 	(boolean) is dir path?
+	 *  
+	 *  @section 	Opens
+	 *  	cleanup source
+	 */
+	/********************************************************************************************************************************/	
+	private static boolean isDirPath(File dirPath) {
+		
+		String name = dirPath.getName();
+				
+		//Syntax - "XX_XX_XX"
+		
+		//Split at '_'
+		String[] tokens = name.split("_");
+		
+		//Correct Syntax?
+		if(tokens.length != 3) {
+			return false;
+		}
+		
+		//Correct Sizing?
+		for(int i=0; i<tokens.length; i++) {
+			
+			if(tokens[i].length()!=2) {
+				return false;
+			}
+		}
+
+		//Else Valid
+		return true;
 	}
 
 	

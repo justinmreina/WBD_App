@@ -5,7 +5,7 @@
  *
  * 	@author		Justin Reina, Firmware Engineer
  * 	@created	2/8/19
- * 	@last rev	8/28/19
+ * 	@last rev	8/29/19
  *
  *
  * 	@notes		observed approximate 45 second search time
@@ -16,7 +16,6 @@
  *  @section 	Deferred Opens
  * 		inject empty dirs on test boot
  * 		clean File/String mashup for use
- * 		only deletes dirs if valid folder name (wbd path)
  * 		
  * 	@section	Legal Disclaimer
  * 			2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
@@ -59,7 +58,7 @@ public class WBDUpdate {
 	
 		//Init
 		wbd_directories = new ArrayList<>();
-		searchDir = SEARCH_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
+		searchDir = TEST_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
 		
 		//Grab Start Time
 		date1 = new Date();
@@ -100,7 +99,7 @@ public class WBDUpdate {
 		
 		//Add today
 		for(String dir : searchDirs) {
-			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
+//			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
 		}
 		
 		
