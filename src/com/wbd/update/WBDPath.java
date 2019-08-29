@@ -30,18 +30,20 @@ public class WBDPath {
 	public static int wbdcount = 0;
 
 	/********************************************************************************************************************************/
-	/**	@fcn		public void getAllWbdDirs(String rootPath)
-	 *  @brief		Get 'WorkByDay' Directories under rootPath
+	/**	@fcn		public String[] getAllWbdDirs(String root)
+	 *  @brief		Get 'WorkByDay' Directories under root
 	 *  @details	x
 	 *
 	 *  @param		[in] (String) root - root directory
 	 *  
+	 *  @return 	(String[]) all WorkByDay directories under rootPath
+	 *  
 	 *  @open		File input?
 	 *  
-	 *  @assum 		rootPath is found
+	 *  @assum 		root is found
 	 */
 	/********************************************************************************************************************************/
-	public static String[] getAllWbdDirs(String rootPath) {
+	public static String[] getAllWbdDirs(String root) {
 		
 		//Locals
 		String[] allDirs;
@@ -51,7 +53,7 @@ public class WBDPath {
 		wbdDirs = new LinkedList<String>();
 		
 		//Retrieve all directories
-		allDirs = WBDPath.getAllDirs(rootPath);
+		allDirs = WBDPath.getAllDirs(root);
 		
 		//Parse wbd
 		for(String dir : allDirs) {
@@ -68,11 +70,13 @@ public class WBDPath {
 	}
 	
 	/********************************************************************************************************************************/
-	/**	@fcn		public void getAllDirs(String rootPath)
+	/**	@fcn		public String[] getAllDirs(String rootPath)
 	 *  @brief		Get Directory Listing under rootPath
 	 *  @details	x
 	 *
 	 *  @param		[in] (String) root - root directory
+	 *  
+	 *  @return 	(String[]) all directories under rootPath, recursively
 	 *  
 	 *  @open		File input?
 	 *  
@@ -161,48 +165,6 @@ public class WBDPath {
         }
 		
 		return allSubDirs; 													/* all sub dirs 										*/
-	}
-	
-	
-	/********************************************************************************************************************************/
-	/**	@fcn		public void displayAll(File path)
-	 *  @brief		x
-	 *  @details	x
-	 *
-	 *  @param		[in] 
-	 */
-	/********************************************************************************************************************************/	
-	public static void displayAll(File path) {   
-		
-		//For each directory, recurse
-	    if(path.isDirectory()) {
-
-	    	//Get Directories
-	    	File files[] = path.listFiles();
-	        
-	        //Safety
-	        if(files == null) {
-	        	return;														/* return on invalid content							*/
-	        }
-	        
-	        //For each item
-	        for(File dirOrFile: files) {	        	
-	            displayAll(dirOrFile);
-	        }
-	        
-	    }
-	    
-	    //Process Dir
-	    WBDPath.count++;    
-	    String name = path.getName();
-	    
-	    //Handle WBD directories
-	    if(name.equals("WorkByDay")) {	   
-	    	WBDPath.wbdcount++;												/* Update Count											*/
-	    	WBDUpdate.processDir(path);										/* Process the WorkByDay folder							*/
-	    }
-	    
-	    return;
 	}
 
 	
