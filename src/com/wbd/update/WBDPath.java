@@ -13,6 +13,9 @@
 /************************************************************************************************************************************/
 package com.wbd.update;
 import java.io.File;
+import java.time.Month;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.LinkedList;
 
 
@@ -329,6 +332,90 @@ public class WBDPath {
 		//Inject a handful of empty directories with valid syntax
 				
 		return;
+	}
+	
+
+	/********************************************************************************************************************************/
+	/**	@fcn		public static String getToday()
+	 *  @brief		get wbd dir name for today
+	 *  @details	x
+	 *
+	 *  @return 	(String) today's path (e.g. "19_08_28" for 8/28/19)
+	 *  
+	 *  @section 	Opens
+	 *  	complete routine
+	 *  
+	 *  @assum		US-Pacific location
+	 */
+	/********************************************************************************************************************************/	
+	public static String getToday() { 
+		
+		//Locals
+		ZoneId zonedId;
+		ZonedDateTime zdt;
+		Month month;
+		int m, d, y;
+
+		//Init
+		zonedId = ZoneId.of("US/Pacific");
+		zdt = ZonedDateTime.now(zonedId);
+
+		//Parse
+		month = zdt.getMonth();
+		
+		//Parse Month
+		switch(month) {
+			case JANUARY:
+				m = 1;
+				break;
+			case FEBRUARY:
+				m = 2;
+				break;
+			case MARCH:
+				m = 3;
+				break;
+			case APRIL:
+				m = 4;
+				break;
+			case MAY:
+				m = 5;
+				break;
+			case JUNE:
+				m = 6;
+				break;
+			case JULY:
+				m = 7;
+				break;
+			case AUGUST:
+				m = 8;
+				break;
+			case SEPTEMBER:
+				m = 9;
+				break;
+			case OCTOBER:
+				m = 10;
+				break;
+			case NOVEMBER:
+				m = 11;
+				break;
+			case DECEMBER:
+				m = 12;
+				break;		
+			default:
+				m = 0;
+		}
+		
+		//Parse Day & Year
+		d = zdt.getDayOfMonth();
+		y = zdt.getYear();
+		
+		//Trim Year to two digits
+		y %= 100;
+		
+		//Form String
+		String name = String.format("%02d_%02d_%02d", y, m, d);
+		
+		return name;
 	}
 }
 
