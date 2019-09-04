@@ -5,21 +5,23 @@
  *
  * 	@author		Justin Reina, Firmware Engineer
  * 	@created	2/8/19
- * 	@last rev	8/29/19
+ * 	@last rev	9/4/19
  *
  *
- * 	@notes		observed approximate 45 second search time
+ * 	@section 	Performance
+ * 		• Observed approximate 45 second search time
+ * 		• Content located in administrator's locations (e.g. 'C:\Program Files' must be handled in supervisor mode
  *
  * 	@section	Opens
- * 		run from scheduled windows task
+ * 		• Run from scheduled windows task
  * 
  *  @section 	Deferred Opens
- * 		inject empty dirs on test boot
- * 		clean File/String mashup for use
+ * 		• Inject empty dirs on test boot
+ * 		• Clean File/String mashup for use
  * 		
  * 	@section	Legal Disclaimer
- * 			2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
- *			files are the explicit property of Justin Reina. Do not distribute. Do not copy.
+ * 		2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
+ *		files are the explicit property of Justin Reina. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
 package com.wbd.update;
@@ -60,7 +62,7 @@ public class WBDUpdate {
 		//Init
 		wbd_directories = new ArrayList<>();
 		log = new Log();
-		searchDir = TEST_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
+		searchDir = SEARCH_DIR;												/* App: SEARCH_DIR, Dev: TEST_DIR						*/
 
 		//Grab Start Time
 		date1 = new Date();
@@ -75,8 +77,6 @@ public class WBDUpdate {
 		//**************************************************************************************************************************//	
 		System.out.println(">>Beginning search query for WorkByDay -");
 
-		log.info("main(78): 1234 ");
-		
 		//Find all WBD in target
 		searchDirs = WBDPath.getAllWbdDirs(searchDir);		
 
@@ -85,44 +85,43 @@ public class WBDUpdate {
 		WBDPath.count = WBDPath.getAllDirs(searchDir).length;
 
 
-//		//**************************************************************************************************************************//
-//		//														 CLEAN EMPTIES														//
-//		//**************************************************************************************************************************//
-//
-//		//Grab Start Time
-//		date1 = new Date();
-//
-//		//Clean
-//		for(String dir : searchDirs) {
-//			WBDPath.cleanEmpties(new File(dir));							/* For each WBD, check for empties at root				*/
-//		}
-//		
-//		
-//		//**************************************************************************************************************************//
-//		//															ADD TODAY														//
-//		//**************************************************************************************************************************//
-//		
-//		//Add today
-//		for(String dir : searchDirs) {
-//			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
-//		}
-//		
-		log.info("main(110): 1234 ");
-//		
-//		//**************************************************************************************************************************//
-//		//															 END															//
-//		//**************************************************************************************************************************//
-//
-//		//Find elapsed time
-//		date2 = new Date();
-//		
-//		//Calc
-//		long delta_ms = date2.getTime() - date1.getTime();
-//		float time_s = (((float)delta_ms )/1000);
+		//**************************************************************************************************************************//
+		//														 CLEAN EMPTIES														//
+		//**************************************************************************************************************************//
+
+		//Grab Start Time
+		date1 = new Date();
+
+		//Clean
+		for(String dir : searchDirs) {
+			WBDPath.cleanEmpties(new File(dir));							/* For each WBD, check for empties at root				*/
+		}
+		
+		
+		//**************************************************************************************************************************//
+		//														  ADD TODAY														  	//
+		//**************************************************************************************************************************//
+		
+		//Add today
+		for(String dir : searchDirs) {
+			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
+		}
+		
+		
+		//**************************************************************************************************************************//
+		//															 END															//
+		//**************************************************************************************************************************//
+
+		//Find elapsed time
+		date2 = new Date();
+		
+		//Calc
+		long delta_ms = date2.getTime() - date1.getTime();
+		float time_s = (((float)delta_ms )/1000);
 
 		//Exit Message
-//		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
-		System.out.println("\n>>WBDUpate complete"); 
+		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
+
 		return;
 	}
 }
