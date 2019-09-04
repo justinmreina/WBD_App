@@ -29,6 +29,16 @@ public class WBDPath {
 	public static int count = 0;
 	public static int wbdcount = 0;
 
+	//Local Variables
+	private static Log log;
+	
+	//@todo 	header
+	public static void init(Log log) {
+		WBDPath.log = log;
+		return;
+	}
+	
+	
 	/********************************************************************************************************************************/
 	/**	@fcn		public String[] getAllWbdDirs(String root)
 	 *  @brief		Get 'WorkByDay' Directories under root
@@ -55,6 +65,7 @@ public class WBDPath {
 		//Retrieve all directories
 		allDirs = WBDPath.getAllDirs(root);
 		
+		log.error("A");
 		//Parse wbd
 		for(String dir : allDirs) {
 
@@ -376,6 +387,8 @@ public class WBDPath {
 		ZonedDateTime zdt;
 		Month month;
 		int m, d, y;
+		
+		log.error("B");
 
 		//Init
 		zonedId = ZoneId.of("US/Pacific");

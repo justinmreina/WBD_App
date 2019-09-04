@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>log</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>log/WBDLog.xml</name>
+			<type>1</type>
+			<location>D:/Documents/MyWorkspaces/Eclipse/Java/WBD_App/WBDLog.xml</location>
+		</link>
+	</linkedResources>
 </projectDescription>

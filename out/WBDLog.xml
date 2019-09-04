@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-09-04T14:54:57.561681300Z</date>
+  <millis>1567608897561</millis>
+  <nanos>681300</nanos>
+  <sequence>0</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>&gt;I: main(78): 1234 </message>
+</record>
+<record>
+  <date>2019-09-04T14:54:57.607653900Z</date>
+  <millis>1567608897607</millis>
+  <nanos>653900</nanos>
+  <sequence>1</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>error</method>
+  <thread>1</thread>
+  <message>&gt;E: A</message>
+</record>
+<record>
+  <date>2019-09-04T14:54:57.615649700Z</date>
+  <millis>1567608897615</millis>
+  <nanos>649700</nanos>
+  <sequence>2</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>&gt;I: main(110): 1234 </message>
+</record>
+</log>
