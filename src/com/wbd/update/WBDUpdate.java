@@ -99,7 +99,7 @@ public class WBDUpdate {
 		
 		//Add today
 		for(String dir : searchDirs) {
-//			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
+			WBDPath.addToday(new File(dir)); 								/* add today if not found								*/
 		}
 		
 		

@@ -187,7 +187,7 @@ public class WBDPath {
 			
 			//If empty, toss
 			if(isDirEmpty(dirPath)&&isDirPath(dirPath)) {
-				System.out.println(" " + dir + "\\" + dirPath.getName() + " was deleted.");
+				System.out.println(" " + dir + " was deleted.");
 				dirPath.delete();
 			}
 		}
@@ -249,8 +249,9 @@ public class WBDPath {
 	public static void addToday(File root) { 
 		
 		//Locals
-		String 	name;
+		String name;
 		File dir;
+		
 		
 		//Init
 		name = getToday();
@@ -262,6 +263,7 @@ public class WBDPath {
 		//Populate
 		if(!dir.exists()) {
 			dir.mkdirs();													/* create if not found									*/
+			System.out.println(" " + dir + "\\" + dir.getName() + " was added.");
 		} else {
 			System.out.println(dir.getAbsolutePath() + "\\" + name + "\\ was already present, skipping");
 		}
