@@ -2,39 +2,1143 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-09-04T22:03:53.779633700Z</date>
-  <millis>1567634633779</millis>
-  <nanos>633700</nanos>
+  <date>2019-09-05T01:06:34.038297400Z</date>
+  <millis>1567645594038</millis>
+  <nanos>297400</nanos>
   <sequence>0</sequence>
   <logger>com.wbd.update.WBDUpdate</logger>
   <level>INFO</level>
   <class>com.wbd.update.Log</class>
-  <method>error</method>
+  <method>info</method>
   <thread>1</thread>
-  <message>&gt;E: A</message>
+  <message>Logger is initialized, ready for use.</message>
 </record>
 <record>
-  <date>2019-09-04T22:04:39.457245400Z</date>
-  <millis>1567634679457</millis>
-  <nanos>245400</nanos>
+  <date>2019-09-05T01:06:34.113097500Z</date>
+  <millis>1567645594113</millis>
+  <nanos>97500</nanos>
   <sequence>1</sequence>
   <logger>com.wbd.update.WBDUpdate</logger>
   <level>INFO</level>
   <class>com.wbd.update.Log</class>
-  <method>error</method>
+  <method>info</method>
   <thread>1</thread>
-  <message>&gt;E: B</message>
+  <message>Beginning search query for WorkByDay -</message>
 </record>
 <record>
-  <date>2019-09-04T22:04:39.460243200Z</date>
-  <millis>1567634679460</millis>
-  <nanos>243200</nanos>
+  <date>2019-09-05T01:06:59.115232400Z</date>
+  <millis>1567645619115</millis>
+  <nanos>232400</nanos>
   <sequence>2</sequence>
   <logger>com.wbd.update.WBDUpdate</logger>
   <level>INFO</level>
   <class>com.wbd.update.Log</class>
-  <method>error</method>
+  <method>info</method>
   <thread>1</thread>
-  <message>&gt;E: B</message>
+  <message> D:\Documents\.Archived\2017\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.140165800Z</date>
+  <millis>1567645619140</millis>
+  <nanos>165800</nanos>
+  <sequence>3</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2018\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.143158400Z</date>
+  <millis>1567645619143</millis>
+  <nanos>158400</nanos>
+  <sequence>4</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2018\WorkByDay\18_07_15\Mission Statement - Pivotal\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.145153200Z</date>
+  <millis>1567645619145</millis>
+  <nanos>153200</nanos>
+  <sequence>5</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2018\WorkByDay\18_07_31\Ergsense\XTAG Contract Opportunity\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.146150600Z</date>
+  <millis>1567645619146</millis>
+  <nanos>150600</nanos>
+  <sequence>6</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Academic\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.148145500Z</date>
+  <millis>1567645619148</millis>
+  <nanos>145500</nanos>
+  <sequence>7</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Academic\'18 Application\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.150142400Z</date>
+  <millis>1567645619150</millis>
+  <nanos>142400</nanos>
+  <sequence>8</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Finance\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.151138Z</date>
+  <millis>1567645619151</millis>
+  <nanos>138000</nanos>
+  <sequence>9</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Resume\Job Searching\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.153132700Z</date>
+  <millis>1567645619153</millis>
+  <nanos>132700</nanos>
+  <sequence>10</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Resume\Job Searching\Active\First Mode\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.155127500Z</date>
+  <millis>1567645619155</millis>
+  <nanos>127500</nanos>
+  <sequence>11</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Resume\Job Searching\Active\Valve\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.162107100Z</date>
+  <millis>1567645619162</millis>
+  <nanos>107100</nanos>
+  <sequence>12</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\M3D\Last\PromegaDebug\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.164102700Z</date>
+  <millis>1567645619164</millis>
+  <nanos>102700</nanos>
+  <sequence>13</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\M3D\Last\PromegaDebug\PromegaDebug_2\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.179062300Z</date>
+  <millis>1567645619179</millis>
+  <nanos>62300</nanos>
+  <sequence>14</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\AlexisER\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.183052200Z</date>
+  <millis>1567645619183</millis>
+  <nanos>52200</nanos>
+  <sequence>15</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Autonomous Ballistics\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.186044600Z</date>
+  <millis>1567645619186</millis>
+  <nanos>44600</nanos>
+  <sequence>16</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Bazaarian\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.188039800Z</date>
+  <millis>1567645619188</millis>
+  <nanos>39800</nanos>
+  <sequence>17</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\DOjika\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.202000800Z</date>
+  <millis>1567645619202</millis>
+  <nanos>800</nanos>
+  <sequence>18</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.202998700Z</date>
+  <millis>1567645619202</millis>
+  <nanos>998700</nanos>
+  <sequence>19</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\GitHub\Xtag_Lab\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.203997Z</date>
+  <millis>1567645619203</millis>
+  <nanos>997000</nanos>
+  <sequence>20</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Item #1 Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.206987700Z</date>
+  <millis>1567645619206</millis>
+  <nanos>987700</nanos>
+  <sequence>21</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Item #1 Work\Architecture Specification\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.208982900Z</date>
+  <millis>1567645619208</millis>
+  <nanos>982900</nanos>
+  <sequence>22</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Item #2 HW Designs\Design Document\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.210977300Z</date>
+  <millis>1567645619210</millis>
+  <nanos>977300</nanos>
+  <sequence>23</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Team\Schedule\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.211974800Z</date>
+  <millis>1567645619211</millis>
+  <nanos>974800</nanos>
+  <sequence>24</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Misc\Ario_Jreina\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.213969200Z</date>
+  <millis>1567645619213</millis>
+  <nanos>969200</nanos>
+  <sequence>25</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Misc\CongoRise_GH\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.215963800Z</date>
+  <millis>1567645619215</millis>
+  <nanos>963800</nanos>
+  <sequence>26</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Misc\SnailTech_GS\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.216961300Z</date>
+  <millis>1567645619216</millis>
+  <nanos>961300</nanos>
+  <sequence>27</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Motusi\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.218955800Z</date>
+  <millis>1567645619218</millis>
+  <nanos>955800</nanos>
+  <sequence>28</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Personal\Midnight Cry\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.219954Z</date>
+  <millis>1567645619219</millis>
+  <nanos>954000</nanos>
+  <sequence>29</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Personal\Midnight Cry_r0\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.222945700Z</date>
+  <millis>1567645619222</millis>
+  <nanos>945700</nanos>
+  <sequence>30</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Repo\CongoRise_GH\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.223943400Z</date>
+  <millis>1567645619223</millis>
+  <nanos>943400</nanos>
+  <sequence>31</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Repo\SnailTech_GH\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.225937300Z</date>
+  <millis>1567645619225</millis>
+  <nanos>937300</nanos>
+  <sequence>32</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Weisman\Peers\HOhm\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.226935500Z</date>
+  <millis>1567645619226</millis>
+  <nanos>935500</nanos>
+  <sequence>33</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Weisman\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.227933100Z</date>
+  <millis>1567645619227</millis>
+  <nanos>933100</nanos>
+  <sequence>34</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\WorkByDay\19_04_20\Desktop Cleanup\Resume\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.232918700Z</date>
+  <millis>1567645619232</millis>
+  <nanos>918700</nanos>
+  <sequence>35</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\Bazaarian_Hydrade-POC\Design\Source\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.234914100Z</date>
+  <millis>1567645619234</millis>
+  <nanos>914100</nanos>
+  <sequence>36</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\Bazaarian_Hydrade-POC\Design\Source\Prev Work Jreina\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.235910600Z</date>
+  <millis>1567645619235</millis>
+  <nanos>910600</nanos>
+  <sequence>37</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\Bazaarian_Hydrade-POC\Work\WorkByDay\19_09_04 was deleted.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.238903100Z</date>
+  <millis>1567645619238</millis>
+  <nanos>903100</nanos>
+  <sequence>38</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2017\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.239900400Z</date>
+  <millis>1567645619239</millis>
+  <nanos>900400</nanos>
+  <sequence>39</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2018\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.241895200Z</date>
+  <millis>1567645619241</millis>
+  <nanos>895200</nanos>
+  <sequence>40</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2018\WorkByDay\18_07_15\Mission Statement - Pivotal\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.242891900Z</date>
+  <millis>1567645619242</millis>
+  <nanos>891900</nanos>
+  <sequence>41</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\.Archived\2018\WorkByDay\18_07_31\Ergsense\XTAG Contract Opportunity\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.243889700Z</date>
+  <millis>1567645619243</millis>
+  <nanos>889700</nanos>
+  <sequence>42</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Academic\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.244887400Z</date>
+  <millis>1567645619244</millis>
+  <nanos>887400</nanos>
+  <sequence>43</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Academic\'18 Application\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.245884200Z</date>
+  <millis>1567645619245</millis>
+  <nanos>884200</nanos>
+  <sequence>44</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Finance\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.245884200Z</date>
+  <millis>1567645619245</millis>
+  <nanos>884200</nanos>
+  <sequence>45</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Resume\Job Searching\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.246881700Z</date>
+  <millis>1567645619246</millis>
+  <nanos>881700</nanos>
+  <sequence>46</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Resume\Job Searching\Active\First Mode\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.248877100Z</date>
+  <millis>1567645619248</millis>
+  <nanos>877100</nanos>
+  <sequence>47</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Me\Resume\Job Searching\Active\Valve\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.248877100Z</date>
+  <millis>1567645619248</millis>
+  <nanos>877100</nanos>
+  <sequence>48</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\dev name\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.249874Z</date>
+  <millis>1567645619249</millis>
+  <nanos>874000</nanos>
+  <sequence>49</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\dev name\WorkByDay\19_08_13\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.250871Z</date>
+  <millis>1567645619250</millis>
+  <nanos>871000</nanos>
+  <sequence>50</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\dev name\WorkByDay\19_08_13\WorkByDay\19_08_13\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.257853900Z</date>
+  <millis>1567645619257</millis>
+  <nanos>853900</nanos>
+  <sequence>51</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\TestA\A1\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.258850800Z</date>
+  <millis>1567645619258</millis>
+  <nanos>850800</nanos>
+  <sequence>52</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\TestA\A1\A1a\1\2\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.259847Z</date>
+  <millis>1567645619259</millis>
+  <nanos>847000</nanos>
+  <sequence>53</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\TestB\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.261841700Z</date>
+  <millis>1567645619261</millis>
+  <nanos>841700</nanos>
+  <sequence>54</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\TestB\Red\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.264833300Z</date>
+  <millis>1567645619264</millis>
+  <nanos>833300</nanos>
+  <sequence>55</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\data\TestDirs\TestB\WorkByDay\Blue\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.264833300Z</date>
+  <millis>1567645619264</millis>
+  <nanos>833300</nanos>
+  <sequence>56</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\dev name\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.266828800Z</date>
+  <millis>1567645619266</millis>
+  <nanos>828800</nanos>
+  <sequence>57</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\dev name\WorkByDay\19_08_13\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.269820100Z</date>
+  <millis>1567645619269</millis>
+  <nanos>820100</nanos>
+  <sequence>58</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\dev name\WorkByDay\19_08_13\WorkByDay\19_08_13\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.274807100Z</date>
+  <millis>1567645619274</millis>
+  <nanos>807100</nanos>
+  <sequence>59</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\TestA\A1\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.281788500Z</date>
+  <millis>1567645619281</millis>
+  <nanos>788500</nanos>
+  <sequence>60</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\TestA\A1\A1a\1\2\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.283783800Z</date>
+  <millis>1567645619283</millis>
+  <nanos>783800</nanos>
+  <sequence>61</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\TestB\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.288769300Z</date>
+  <millis>1567645619288</millis>
+  <nanos>769300</nanos>
+  <sequence>62</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\TestB\Red\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.289766600Z</date>
+  <millis>1567645619289</millis>
+  <nanos>766600</nanos>
+  <sequence>63</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\Eclipse\Java\WBD_App\out\data\TestDirs\TestB\WorkByDay\Blue\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.303729500Z</date>
+  <millis>1567645619303</millis>
+  <nanos>729500</nanos>
+  <sequence>64</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\M3D\Last\PromegaDebug\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.304727300Z</date>
+  <millis>1567645619304</millis>
+  <nanos>727300</nanos>
+  <sequence>65</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\MyWorkspaces\M3D\Last\PromegaDebug\PromegaDebug_2\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.306722Z</date>
+  <millis>1567645619306</millis>
+  <nanos>722000</nanos>
+  <sequence>66</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.307719200Z</date>
+  <millis>1567645619307</millis>
+  <nanos>719200</nanos>
+  <sequence>67</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\AlexisER\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.313702600Z</date>
+  <millis>1567645619313</millis>
+  <nanos>702600</nanos>
+  <sequence>68</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Autonomous Ballistics\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.314700Z</date>
+  <millis>1567645619314</millis>
+  <nanos>700000</nanos>
+  <sequence>69</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Bazaarian\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.319687100Z</date>
+  <millis>1567645619319</millis>
+  <nanos>687100</nanos>
+  <sequence>70</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\DOjika\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.320684600Z</date>
+  <millis>1567645619320</millis>
+  <nanos>684600</nanos>
+  <sequence>71</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.321682300Z</date>
+  <millis>1567645619321</millis>
+  <nanos>682300</nanos>
+  <sequence>72</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\GitHub\Xtag_Lab\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.322678900Z</date>
+  <millis>1567645619322</millis>
+  <nanos>678900</nanos>
+  <sequence>73</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Item #1 Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.323676100Z</date>
+  <millis>1567645619323</millis>
+  <nanos>676100</nanos>
+  <sequence>74</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Item #1 Work\Architecture Specification\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.324673300Z</date>
+  <millis>1567645619324</millis>
+  <nanos>673300</nanos>
+  <sequence>75</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Item #2 HW Designs\Design Document\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.325671400Z</date>
+  <millis>1567645619325</millis>
+  <nanos>671400</nanos>
+  <sequence>76</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Archived\Ergsense\Xtag\Team\Schedule\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.325671400Z</date>
+  <millis>1567645619325</millis>
+  <nanos>671400</nanos>
+  <sequence>77</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Misc\Ario_Jreina\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.326669Z</date>
+  <millis>1567645619326</millis>
+  <nanos>669000</nanos>
+  <sequence>78</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Misc\CongoRise_GH\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.327665600Z</date>
+  <millis>1567645619327</millis>
+  <nanos>665600</nanos>
+  <sequence>79</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Misc\SnailTech_GS\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.330657100Z</date>
+  <millis>1567645619330</millis>
+  <nanos>657100</nanos>
+  <sequence>80</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Motusi\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.332652Z</date>
+  <millis>1567645619332</millis>
+  <nanos>652000</nanos>
+  <sequence>81</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Personal\Midnight Cry\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.333649300Z</date>
+  <millis>1567645619333</millis>
+  <nanos>649300</nanos>
+  <sequence>82</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Personal\Midnight Cry_r0\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.333649300Z</date>
+  <millis>1567645619333</millis>
+  <nanos>649300</nanos>
+  <sequence>83</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Repo\CongoRise_GH\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.334647400Z</date>
+  <millis>1567645619334</millis>
+  <nanos>647400</nanos>
+  <sequence>84</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Repo\SnailTech_GH\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.335644400Z</date>
+  <millis>1567645619335</millis>
+  <nanos>644400</nanos>
+  <sequence>85</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Weisman\Peers\HOhm\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.336641900Z</date>
+  <millis>1567645619336</millis>
+  <nanos>641900</nanos>
+  <sequence>86</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\Weisman\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.336641900Z</date>
+  <millis>1567645619336</millis>
+  <nanos>641900</nanos>
+  <sequence>87</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Documents\Work\WorkByDay\19_04_20\Desktop Cleanup\Resume\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.338636500Z</date>
+  <millis>1567645619338</millis>
+  <nanos>636500</nanos>
+  <sequence>88</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>D:\Drive\CongoRise\Work\WorkByDay\19_09_04\19_09_04\ was already present, skipping</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.339634700Z</date>
+  <millis>1567645619339</millis>
+  <nanos>634700</nanos>
+  <sequence>89</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>D:\Drive\SnailTech\Work\WorkByDay\19_09_04\19_09_04\ was already present, skipping</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.342625500Z</date>
+  <millis>1567645619342</millis>
+  <nanos>625500</nanos>
+  <sequence>90</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.345618300Z</date>
+  <millis>1567645619345</millis>
+  <nanos>618300</nanos>
+  <sequence>91</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\Bazaarian_Hydrade-POC\Design\Source\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.346614800Z</date>
+  <millis>1567645619346</millis>
+  <nanos>614800</nanos>
+  <sequence>92</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\Bazaarian_Hydrade-POC\Design\Source\Prev Work Jreina\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.355590600Z</date>
+  <millis>1567645619355</millis>
+  <nanos>590600</nanos>
+  <sequence>93</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message> D:\Dropbox\Bazaarian_Hydrade-POC\Work\WorkByDay\19_09_04 was added.</message>
+</record>
+<record>
+  <date>2019-09-05T01:06:59.386508300Z</date>
+  <millis>1567645619386</millis>
+  <nanos>508300</nanos>
+  <sequence>94</sequence>
+  <logger>com.wbd.update.WBDUpdate</logger>
+  <level>INFO</level>
+  <class>com.wbd.update.Log</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>WBDUpate complete(56\81380). Elapsed time: 0.25m</message>
 </record>
 </log>

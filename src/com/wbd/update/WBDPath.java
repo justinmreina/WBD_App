@@ -7,7 +7,7 @@
  * 			none listed
  *
  * 	@section	Legal Disclaimer
- * 			2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
+ * 			2019© Justin Reina, All rights reserved. All contents of this source file and/or any other related source  
  *			files are the explicit property of Justin Reina. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
@@ -29,15 +29,6 @@ public class WBDPath {
 	public static int count = 0;
 	public static int wbdcount = 0;
 
-	//Local Variables
-	private static Log log;
-	
-	//@todo 	header
-	public static void init(Log log) {
-		WBDPath.log = log;
-		return;
-	}
-	
 	
 	/********************************************************************************************************************************/
 	/**	@fcn		public String[] getAllWbdDirs(String root)
@@ -65,7 +56,6 @@ public class WBDPath {
 		//Retrieve all directories
 		allDirs = WBDPath.getAllDirs(root);
 		
-		log.error("A");
 		//Parse wbd
 		for(String dir : allDirs) {
 
@@ -79,7 +69,8 @@ public class WBDPath {
 		
 		return wbdDirs.toArray(new String[wbdDirs.size()]);
 	}
-	
+
+
 	/********************************************************************************************************************************/
 	/**	@fcn		public String[] getAllDirs(String rootPath)
 	 *  @brief		Get Directory Listing under rootPath
@@ -198,7 +189,7 @@ public class WBDPath {
 			
 			//If empty, toss
 			if(isDirEmpty(dirPath)&&isDirPath(dirPath)) {
-				System.out.println(" " + dir + " was deleted.");
+				Log.info(" " + dir + " was deleted.");
 				dirPath.delete();
 			}
 		}
@@ -274,9 +265,9 @@ public class WBDPath {
 		//Populate
 		if(!dir.exists()) {
 			dir.mkdirs();													/* create if not found									*/
-			System.out.println(" " + dir + " was added.");
+			Log.info(" " + dir + " was added.");
 		} else {
-			System.out.println(dir.getAbsolutePath() + "\\" + name + "\\ was already present, skipping");
+			Log.info(dir.getAbsolutePath() + "\\" + name + "\\ was already present, skipping");
 		}
 		
 		return;
@@ -354,7 +345,8 @@ public class WBDPath {
 	 *  @param		[in] (File) dir - directory to setup
 	 *  
 	 *  @section 	Opens
-	 *  	complete routine
+	 *  	Complete routine
+	 *  	Inject a handful of empty directories with valid syntax
 	 */
 	/********************************************************************************************************************************/	
 	public static void setupTest(String dir) { 
@@ -363,8 +355,6 @@ public class WBDPath {
 		if(dir != WBDUpdate.TEST_DIR) {
 			return;															/* only setup for test on TEST_DIR case					*/
 		}
-
-		//Inject a handful of empty directories with valid syntax
 				
 		return;
 	}
@@ -387,9 +377,8 @@ public class WBDPath {
 		ZonedDateTime zdt;
 		Month month;
 		int m, d, y;
-		
-		log.error("B");
 
+		
 		//Init
 		zonedId = ZoneId.of("US/Pacific");
 		zdt = ZonedDateTime.now(zonedId);

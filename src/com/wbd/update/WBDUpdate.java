@@ -12,16 +12,13 @@
  * 		• Observed approximate 45 second search time
  * 		• Content located in administrator's locations (e.g. 'C:\Program Files' must be handled in supervisor mode
  *
- * 	@section	Opens
- * 		• Run from scheduled windows task
- * 
  *  @section 	Deferred Opens
  * 		• Inject empty dirs on test boot
  * 		• Clean File/String mashup for use
  * 		
  * 	@section	Legal Disclaimer
- * 		2019© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
- *		files are the explicit property of Justin Reina. Do not distribute. Do not copy.
+ * 			2019© Justin Reina, All rights reserved. All contents of this source file and/or any other related source  
+ *			files are the explicit property of Justin Reina. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
 package com.wbd.update;
@@ -68,14 +65,13 @@ public class WBDUpdate {
 		date1 = new Date();
 
 		//Setup
-		WBDPath.init(log);
 		WBDPath.setupTest(searchDir);
 
 		
 		//**************************************************************************************************************************//
 		//															SEARCH															//
 		//**************************************************************************************************************************//	
-		System.out.println(">>Beginning search query for WorkByDay -");
+		Log.info("Beginning search query for WorkByDay -");
 
 		//Find all WBD in target
 		searchDirs = WBDPath.getAllWbdDirs(searchDir);		
@@ -120,7 +116,7 @@ public class WBDUpdate {
 		float time_s = (((float)delta_ms )/1000);
 
 		//Exit Message
-		System.out.println("\n>>WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "s");
+		Log.info("WBDUpate complete(" + WBDPath.wbdcount + "\\" + WBDPath.count + "). Elapsed time: " + time_s + "m");
 
 		return;
 	}
