@@ -43,21 +43,22 @@ public class Dir {
 	
 		
 		//Create full path
-		path = loc.getPath() + name;	
+		path = loc.getPath() + "\\" + name;	
 		dir = new File(path);		
 
 		//(Pre) Check if exists
 		if (dir.exists()){
 			System.out.println("Directory exists, aborting.");
-			return new File("");
+			System.exit(0);
 		}
 		
 		//Create
 		bool = dir.mkdirs();
 
 		//Check
-		if(bool){
-			System.out.println("Directory created successfully");
+		if(bool){		
+			System.out.println("Loc: " + loc.getAbsolutePath() + ", name " + name);
+			System.out.println("Directory created successfully of " + dir.getAbsolutePath() + ", for " + path + ", of name " + name + "\n");
 		}else{
 			System.out.println("Sorry couldn’t create specified directory");	
 		}
@@ -70,6 +71,8 @@ public class Dir {
 	/**	@fcn		public static void test()
 	 *  @brief		Class validation test
 	 *  @details	x
+	 *  
+	 *  @pre		D:\demoTest is deleted
 	 */
 	/********************************************************************************************************************************/	
 	public static void test() {
@@ -91,10 +94,9 @@ public class Dir {
 		} else {
 			result = "fail";
 		}
-
+		
 		//Confirm result
 		System.out.println("Test Result: " + result);
-
 				
 		return;
 	}	
